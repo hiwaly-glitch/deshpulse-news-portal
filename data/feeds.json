@@ -1,0 +1,10 @@
+[
+  {"id":"prothom-alo","name":"Prothom Alo","language":"bn","group":"newspaper","url":"https://www.prothomalo.com/feed/","homepage":"https://www.prothomalo.com","enabled":true,"rights":"link-metadata-only"},
+  {"id":"daily-star","name":"The Daily Star","language":"en","group":"newspaper","url":"https://www.thedailystar.net/frontpage/rss.xml","homepage":"https://www.thedailystar.net","enabled":true,"rights":"link-metadata-only"},
+  {"id":"jago-news","name":"Jago News 24","language":"bn","group":"digital","url":"https://www.jagonews24.com/rss/rss.xml","homepage":"https://www.jagonews24.com","enabled":true,"rights":"link-metadata-only"},
+  {"id":"bd24live","name":"BD24Live","language":"bn","group":"digital","url":"https://www.bd24live.com/feed","homepage":"https://www.bd24live.com","enabled":true,"rights":"link-metadata-only"},
+  {"id":"bdnews24","name":"bdnews24","language":"en","group":"digital","url":"https://bdnews24.com/?widgetName=rssfeed&widgetId=1150&getXmlFeed=true","homepage":"https://bdnews24.com","enabled":true,"rights":"link-metadata-only"},
+  {"id":"banglanews24","name":"Banglanews24","language":"bn","group":"digital","url":"https://www.banglanews24.com/rss/rss.xml","homepage":"https://www.banglanews24.com","enabled":false,"reason":"403 reported — awaiting publisher access"},
+  {"id":"kaler-kantho","name":"Kaler Kantho","language":"bn","group":"newspaper","url":"https://www.kalerkantho.com/rss.xml","homepage":"https://www.kalerkantho.com","enabled":false,"reason":"403 reported — awaiting publisher access"},
+  {"id":"jugantor","name":"Jugantor","language":"bn","group":"newspaper","url":"https://www.jugantor.com/feed/rss.xml","homepage":"https://www.jugantor.com","enabled":false,"reason":"Feed unavailable — needs discovery"}
+]

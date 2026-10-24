@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="bn">
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#0b1725" />
+ <meta name="description" content="DeshPulse — discover today's Bangladesh news from independent newsrooms, broadcasters, government and defence sources. বাংলা ও ইংরেজি সংবাদ, মূল প্রকাশকের লিংকসহ।" />
+ <meta name="robots" content="index,follow" />
+ <title>দেশপালস | Bangladesh News, All in One Place</title>
+ <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+ <link rel="manifest" href="/manifest.webmanifest" />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="/styles.css" />
+ <script type="module" src="/app.js"></script>
+</head>
+<body>
+ <a class="skip-link" href="#main">Skip to content</a>
+ <div class="topbar">
+  <div class="shell topbar-inner"><span class="topbar-message" data-i18n="topline">বাংলাদেশের খবর, বিশ্বস্ত উৎস থেকে</span><span id="dateDisplay" class="topbar-date"></span><span class="topbar-right"><span class="status-dot"></span><span data-i18n="independent">INDEPENDENT NEWS INDEX</span></span></div>
+ </div>
+ <header class="header shell">
+  <a href="/" class="brand" aria-label="DeshPulse homepage">
+   <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 50 50" width="44" height="44" fill="none"><rect x="1.5" y="1.5" width="47" height="47" rx="13" stroke="currentColor" stroke-width="2"/><path d="M12 32V17h11c8 0 13 3 13 12s-5 12-13 12h-3" stroke="currentColor" stroke-width="4.3" stroke-linecap="round"/><path d="M12 27h23" stroke="#5addac" stroke-width="3.5" stroke-linecap="round"/><circle cx="37.5" cy="13.5" r="4.5" fill="#5addac"/></svg></span>
+   <span class="brand-type"><span class="brand-bn">দেশপালস<span class="brand-dot">.</span></span><span class="brand-en">DESHPULSE <span class="brand-separator">/</span> NEWS INTELLIGENCE</span></span>
+  </a>
+  <div class="header-actions">
+   <div class="search-container"><svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><label class="sr-only" for="globalSearch">Search news and sources</label><input id="globalSearch" type="search" autocomplete="off" placeholder="খবর বা সংবাদমাধ্যম খুঁজুন" /><span class="shortcut">/</span></div>
+   <div class="language-toggle" aria-label="Display language"><button type="button" id="btnBn" class="lang-button active" aria-pressed="true">বাংলা</button><button type="button" id="btnEn" class="lang-button" aria-pressed="false">EN</button></div>
+  </div>
+ </header>
+ <div class="navigation-wrap"><nav class="shell main-nav" aria-label="Main categories">
+  <div class="nav-links" id="navLinks">
+   <button type="button" data-category="all" class="nav-link active" data-i18n="navAll">সব খবর</button>
+   <button type="button" data-category="national" class="nav-link" data-i18n="navNational">বাংলাদেশ</button>
+   <button type="button" data-category="politics" class="nav-link" data-i18n="navPolitics">রাজনীতি</button>
+   <button type="button" data-category="business" class="nav-link" data-i18n="navBusiness">অর্থনীতি</button>
+   <button type="button" data-category="world" class="nav-link" data-i18n="navWorld">আন্তর্জাতিক</button>
+   <button type="button" data-category="sports" class="nav-link" data-i18n="navSports">খেলাধুলা</button>
+   <button type="button" data-category="technology" class="nav-link" data-i18n="navTechnology">প্রযুক্তি</button>
+   <button type="button" data-category="defence" class="nav-link" data-i18n="navDefence">প্রতিরক্ষা</button>
+  </div>
+  <a href="#sources" class="nav-sources"><span data-i18n="directory">সূত্র তালিকা</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 5 7 7-7 7"/></svg></a>
+ </nav></div>
+ <main id="main">
+  <section class="hero" aria-labelledby="heroTitle">
+   <div class="hero-decor hero-decor-one"></div><div class="hero-decor hero-decor-two"></div>
+   <div class="shell hero-content">
+    <div class="hero-copy"><p class="eyebrow hero-eyebrow"><span class="small-star" aria-hidden="true"></span> <span data-i18n="eyebrow">BANGLADESH NEWS, CONNECTED</span></p><h1 id="heroTitle" data-i18n-html="heroTitle">এক দেশ। <em>অসংখ্য গল্প।</em><br />সব খবর এক জায়গায়।</h1><p class="hero-description" data-i18n="heroDescription">দেশ-বিদেশের সর্বশেষ খবর, সংবাদপত্র, টেলিভিশন এবং সরকারি সূত্র থেকে—প্রকাশকের আসল লিংকসহ এক জায়গায়।</p>
+    <div class="hero-ctas"><a class="btn btn-primary" href="#latest"><span data-i18n="explore">সর্বশেষ খবর দেখুন</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><a class="btn btn-ghost" href="#sources"><span data-i18n="exploreSources">১৭৫টি সংবাদ উৎস</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+    <div class="hero-stats"><div><span class="stat-number" id="sourcesTotal">175</span><span class="stat-label" data-i18n="registeredSources">তালিকাভুক্ত উৎস</span></div><div class="stat-divider"></div><div><span class="stat-number" id="connectedTotal">05</span><span class="stat-label" data-i18n="feedCandidates">সক্রিয় ফিড চেষ্টা</span></div><div class="stat-divider"></div><div><span class="stat-number">BN <span class="mini-plus">+</span> EN</span><span class="stat-label" data-i18n="languages">দুটি ভাষা</span></div></div>
+    </div>
+    <div class="hero-panel"><div class="panel-chrome"><div class="panel-chrome-left"><span class="signal-bars"><i></i><i></i><i></i><i></i></span><span data-i18n="wire">THE LIVE WIRE</span></div><span class="panel-chrome-right" id="heroLiveLabel">CONNECTING...</span></div><div class="panel-art" aria-hidden="true"><div class="art-grid"></div><div class="radar radar-outer"></div><div class="radar radar-inner"></div><div class="radar-cross"></div><span class="radar-origin"></span><span class="map-label">23.8103° N / 90.4125° E</span><span class="art-brand">D<span>.</span>P / 24</span></div><div class="panel-story"><p class="panel-kicker"><span class="live-pin"></span><span data-i18n="spotlight">LIVE SOURCE MONITOR</span></p><h2 id="heroHeadline" data-i18n="connectingTitle">আজকের সংবাদের সঙ্গে সংযোগ হচ্ছে...</h2><p id="heroDescription" data-i18n="connectingDescription">ফিড থেকে সত্যিকারের সংবাদ পাওয়া গেলে এখানে দেখানো হবে। কোনো কাল্পনিক শিরোনাম প্রকাশ করা হয় না।</p><a id="heroStoryLink" class="hero-link hidden" target="_blank" rel="noopener noreferrer" href="#"><span data-i18n="readOriginal">মূল সংবাদ পড়ুন</span><span aria-hidden="true">↗</span></a></div></div>
+   </div>
+  </section>
+  <section class="ticker-section"><div class="shell ticker-inner"><span class="ticker-title"><span class="ticker-pulse"></span><span data-i18n="wireLabel">নিউজ ওয়্যার</span></span><div id="tickerText" class="ticker-text" aria-live="polite">Checking permitted news feeds for current headlines...</div><span class="ticker-timestamp" id="tickerTime">—</span></div></section>
+  <section class="latest-section shell section" id="latest" aria-labelledby="latestTitle">
+   <div class="section-heading"><div><p class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span><span data-i18n="freshDispatches">FRESH DISPATCHES</span></p><h2 id="latestTitle" data-i18n-html="latestTitle">সর্বশেষ সংবাদ<span class="teal-period">.</span></h2><p class="section-subtitle" data-i18n="latestSub">প্রকাশিত সংবাদ সংগ্রহ করে মূল সংবাদমাধ্যমে পাঠানো হয়।</p></div><div class="feed-status"><div class="feed-status-main"><span class="status-dot" id="feedDot"></span><span id="feedStatus" data-i18n="checking">ফিড পরীক্ষা করা হচ্ছে</span></div><button id="refreshBtn" class="refresh-btn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.4-5.7L20 9M20 4v5h-5"/></svg><span data-i18n="refresh">রিফ্রেশ</span></button></div></div>
+   <div class="content-grid"><div class="news-content">
+    <div class="filter-row"><div class="filter-pills" id="filterPills"><button type="button" data-lang-filter="all" class="pill active" data-i18n="allLanguages">সব ভাষা</button><button type="button" data-lang-filter="bn" class="pill" data-i18n="banglaOnly">বাংলা সংবাদ</button><button type="button" data-lang-filter="en" class="pill" data-i18n="englishOnly">English</button></div><span class="result-count" id="resultCount" aria-live="polite">—</span></div>
+    <div id="newsList" class="news-list" aria-live="polite"><div class="loading-placeholder"><div class="loading-lines"><span></span><span></span><span></span></div><div><h3 data-i18n="fetching">সংবাদ সংগ্রহ চলছে</h3><p data-i18n="fetchingDescription">অনুমোদিত আরএসএস ফিড থেকে প্রকাশকের তথ্য যাচাই করা হচ্ছে।</p></div></div></div>
+    <div class="news-pagination" id="pagination"><button id="moreBtn" type="button" class="btn btn-outline hidden"><span data-i18n="loadMore">আরও সংবাদ দেখুন</span><span aria-hidden="true">↓</span></button></div>
+   </div><aside class="sidebar" aria-label="News source information">
+    <div class="sidebar-card sidebar-overview"><div class="sidebar-title"><span class="circle-icon"><svg viewBox="0 0 24 24"><path d="M4 18V7m5 11V4m5 14v-8m5 8V6"/></svg></span><h3 data-i18n="behindHeadlines">সংবাদের পেছনে</h3></div><p data-i18n="behindDescription">আমরা সংবাদ লিখি না—বিশ্বস্ত মাধ্যমের প্রকাশিত খবর খুঁজে মূল সূত্রের সঙ্গে যুক্ত করি।</p><div class="overview-metrics"><div><strong id="sidebarArticles">0</strong><span data-i18n="freshStories">সাম্প্রতিক খবর</span></div><div><strong id="sidebarSuccess">0 / 5</strong><span data-i18n="workingFeeds">সচল ফিড</span></div></div><div class="sidebar-note"><svg viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Zm-4 10 3 3 5-6"/></svg><span data-i18n="sourceTransparency">প্রতিটি সংবাদের মূল সূত্র ও প্রকাশকাল দেখানো হয়</span></div></div>
+    <div class="sidebar-card"><div class="sidebar-title sidebar-small"><span class="circle-icon icon-gold"><svg viewBox="0 0 24 24"><path d="M4 10h16M6 10V20m6-10v10m6-10v10M3 20h18M12 3 3 8h18Z"/></svg></span><h3 data-i18n="officialDesk">সরকারি সংবাদ ডেস্ক</h3></div><p data-i18n="officialDescription">সরকারি এবং প্রতিরক্ষা বাহিনীর গুরুত্বপূর্ণ তথ্যের সরাসরি লিংক।</p><div id="officialSources" class="official-links"></div><a href="#sources" class="sidebar-all-link"><span data-i18n="seeAllOfficial">সব সরকারি উৎস দেখুন</span><span>↗</span></a></div>
+    <div class="sidebar-card editor-note"><span class="editor-note-tag" data-i18n="editorsNote">TRANSPARENCY NOTE</span><h3 data-i18n="notAffiliated">Independent by design.</h3><p data-i18n="notAffiliatedDescription">সংবাদ প্রকাশকদের সঙ্গে এই ওয়েবসাইটের কোনো আনুষ্ঠানিক সম্পর্ক দাবি করা হচ্ছে না। খবরের স্বত্ব সংশ্লিষ্ট প্রকাশকের।</p></div>
+   </aside></div>
+  </section>
+  <section class="source-section" id="sources" aria-labelledby="sourceTitle"><div class="shell section"><div class="source-topline"><div><p class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span><span data-i18n="sourceNetwork">THE SOURCE NETWORK</span></p><h2 id="sourceTitle" data-i18n-html="sourceTitle">সারা দেশের সংবাদ উৎস<span class="teal-period">.</span></h2><p class="section-subtitle" data-i18n="sourceSub">সংবাদপত্র, অনলাইন পোর্টাল, টেলিভিশন এবং সরকারি প্রতিষ্ঠান—একটি অনুসন্ধানযোগ্য তালিকায়।</p></div><div class="directory-number"><strong id="dirCount">175</strong><span data-i18n="directorySources">LISTED SOURCES</span></div></div>
+  <div class="directory-tools"><div class="directory-filters" id="directoryFilters"><button class="source-filter active" data-source-group="all" data-i18n="allSources">সব উৎস</button><button class="source-filter" data-source-group="newspaper" data-i18n="newspapers">সংবাদপত্র</button><button class="source-filter" data-source-group="digital" data-i18n="digital">অনলাইন সংবাদ</button><button class="source-filter" data-source-group="television" data-i18n="television">টেলিভিশন</button><button class="source-filter" data-source-group="government" data-i18n="government">সরকারি</button><button class="source-filter" data-source-group="defence" data-i18n="defence">প্রতিরক্ষা</button><button class="source-filter" data-source-group="security" data-i18n="security">নিরাপত্তা</button><button class="source-filter" data-source-group="regional" data-i18n="regional">আঞ্চলিক</button><button class="source-filter" data-source-group="agency" data-i18n="agencies">সংবাদ সংস্থা</button></div><div class="directory-search-wrap"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><label class="sr-only" for="directorySearch">Filter news sources</label><input id="directorySearch" type="search" placeholder="উৎস খুঁজুন..." /></div></div>
+   <div id="directoryList" class="directory-grid" aria-live="polite"></div><div class="directory-footer"><span id="directoryShowing"></span><button id="showSourcesBtn" type="button" class="btn btn-outline" data-i18n="all175">আরও উৎস দেখুন ↓</button></div>
+  </div></section>
+  <section class="method-section"><div class="shell method-grid"><div><p class="eyebrow"><span class="eyebrow-line light"></span><span data-i18n="howWorks">HOW IT WORKS</span></p><h2 data-i18n-html="methodTitle">খবরের কাছে, <em>সরাসরি।</em></h2><p data-i18n="methodSub">একটি শিরোনাম, একটি মূল লিংক—সংবাদ কোথায় প্রকাশিত হয়েছে তা সবসময় পরিষ্কার।</p></div><div class="method-steps"><div><span class="method-number">01</span><div><h3 data-i18n="methodCollect">সূত্র থেকে সংগ্রহ</h3><p data-i18n="methodCollectText">যেসব RSS ফিড অনুমতি দেয়, সেগুলো নিয়মিত পরীক্ষা করা হয়।</p></div></div><div><span class="method-number">02</span><div><h3 data-i18n="methodFilter">তারিখ ও লিংক যাচাই</h3><p data-i18n="methodFilterText">পুরোনো সংবাদ বাদ দেওয়া হয় এবং ডুপ্লিকেট সরানো হয়।</p></div></div><div><span class="method-number">03</span><div><h3 data-i18n="methodLink">মূল প্রকাশকের কাছে</h3><p data-i18n="methodLinkText">সম্পূর্ণ খবর পড়তে সরাসরি উৎসের ওয়েবসাইটে যান।</p></div></div></div></div></section>
+ </main>
+ <footer class="footer"><div class="shell footer-main"><div><a class="brand footer-brand" href="/"><span class="brand-symbol small" aria-hidden="true">D<span>.</span></span><span class="brand-type"><span class="brand-bn">দেশপালস</span><span class="brand-en">DESHPULSE / NEWS INTELLIGENCE</span></span></a><p data-i18n="footerTag">বাংলাদেশের সংবাদপথ খুঁজে পাওয়ার একটি স্বাধীন উদ্যোগ।</p></div><div class="footer-links"><a href="#latest" data-i18n="footerLatest">সর্বশেষ সংবাদ</a><a href="#sources" data-i18n="footerSources">সূত্র তালিকা</a><a href="mailto:editorial@example.invalid" class="hidden" id="footerMail">যোগাযোগ</a></div></div><div class="shell footer-base"><p>© <span id="copyrightYear"></span> DeshPulse. <span data-i18n="rights">All article copyrights belong to their respective publishers.</span></p><p data-i18n="footerDisclosure">Not affiliated with listed publishers or government agencies. News excerpts are displayed for discovery and attribution.</p></div></footer>
+ <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
