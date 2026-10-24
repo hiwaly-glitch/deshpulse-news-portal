@@ -1,0 +1,16 @@
+{
+  "name": "deshpulse-newsroom",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Bengali-English news aggregator linking to original publishers; zero runtime dependencies",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check server.js && node --check api/news.js && node --check lib/feeds.js && node --check lib/news-cache.js && node --check public/app.js && node --check api/health.js"
+  },
+  "engines": {
+    "node": ">=22 <23"
+  }
+}
